@@ -1,0 +1,39 @@
+
+Bugs and Manual Test case can be find in 
+
+1) Documents folder
+
+
+Steps for Web Automation Testing - 
+Project name - Knime
+
+1) Run the testng.xml file to execute the test cases.
+
+2) Once all testcases are executed, refresh the "test-output" folder.
+
+3) You will see "SparkReport-Current Timestamp" folder being generated under "test-output/Reports" folder
+   with the Knime.html file name.
+
+
+
+Steps for API testing
+Project name - KnimeAPI
+
+1) You need to replace the token which we get below steps
+ Login into application with credentials
+Username: prkhanna
+password: Auto@123
+
+Open the Chrome Dev tools --> Newtork tab  and refresh the page and check for the request
+with name token and copy the access token value.
+
+2) Please open application.properties file and check for the token value and replace the copied value in 
+the file against token key and save.
+
+3) Run the testng.xml file for the project 
+
+4) Result will be displayed in ExtentReportsTestNG.html file under test-output folder.
+
+Note- I know the token should also been automated but unfortunately I could not find the documentation of 
+current authentication process of oauth2 token generation .
+

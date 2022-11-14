@@ -1,0 +1,318 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "canonicalPath": {
+      "type": "string"
+    },
+    "_class": {
+      "type": "string"
+    },
+    "ownerAccountId": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "createdOn": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "downloadCount": {
+      "type": "integer"
+    },
+    "kudosCount": {
+      "type": "integer"
+    },
+    "lastEditedOn": {
+      "type": "string"
+    },
+    "private": {
+      "type": "boolean"
+    },
+    "tags": {
+      "type": "array",
+      "items": {}
+    },
+    "contributors": {
+      "type": "array",
+      "items": {}
+    },
+    "accesses": {
+      "type": "array",
+      "items": {}
+    },
+    "children": {
+      "type": "array",
+      "items": {}
+    },
+    "actions": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "@controls": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "object",
+          "properties": {
+            "href": {
+              "type": "string"
+            },
+            "method": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "href",
+            "method"
+          ]
+        },
+        "knime:download": {
+          "type": "object",
+          "properties": {
+            "href": {
+              "type": "string"
+            },
+            "method": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "href",
+            "method"
+          ]
+        },
+        "knime:delete": {
+          "type": "object",
+          "properties": {
+            "href": {
+              "type": "string"
+            },
+            "method": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "href",
+            "method"
+          ]
+        },
+        "edit": {
+          "type": "object",
+          "properties": {
+            "href": {
+              "type": "string"
+            },
+            "method": {
+              "type": "string"
+            },
+            "accept": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "encoding": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "href",
+            "method",
+            "accept",
+            "encoding",
+            "title"
+          ]
+        },
+        "knime:upload": {
+          "type": "object",
+          "properties": {
+            "href": {
+              "type": "string"
+            },
+            "isHrefTemplate": {
+              "type": "boolean"
+            },
+            "method": {
+              "type": "string"
+            },
+            "accept": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "encoding": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "href",
+            "isHrefTemplate",
+            "method",
+            "accept",
+            "encoding",
+            "title"
+          ]
+        },
+        "knime:create": {
+          "type": "object",
+          "properties": {
+            "href": {
+              "type": "string"
+            },
+            "isHrefTemplate": {
+              "type": "boolean"
+            },
+            "method": {
+              "type": "string"
+            },
+            "accept": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "encoding": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "href",
+            "isHrefTemplate",
+            "method",
+            "accept",
+            "encoding",
+            "title"
+          ]
+        }
+      },
+      "required": [
+        "self",
+        "knime:download",
+        "knime:delete",
+        "edit",
+        "knime:upload",
+        "knime:create"
+      ]
+    },
+    "@namespaces": {
+      "type": "object",
+      "properties": {
+        "knime": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name"
+          ]
+        }
+      },
+      "required": [
+        "knime"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "path",
+    "canonicalPath",
+    "_class",
+    "ownerAccountId",
+    "owner",
+    "author",
+    "createdOn",
+    "description",
+    "downloadCount",
+    "kudosCount",
+    "lastEditedOn",
+    "private",
+    "tags",
+    "contributors",
+    "accesses",
+    "children",
+    "actions",
+    "@controls",
+    "@namespaces"
+  ]
+}
